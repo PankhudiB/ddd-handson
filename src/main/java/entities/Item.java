@@ -1,9 +1,20 @@
 package entities;
 
 public class Item {
-    String Name;
+    Product product;
+    Quantity quantity;
 
-    public Item(String name) {
-        Name = name;
+
+    public Item(Product product, Quantity quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "product=" + product +
+                ", quantity=" + quantity +
+                '}';
     }
 }
